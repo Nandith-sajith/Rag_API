@@ -1,0 +1,30 @@
+# Python-specific
+.venv/
+.gitold/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment and secrets
+.env
+
+# Project-specific
+nltk_data/
+chroma_db/
+
+# Pytest cache
+.pytest_cache/
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+
+# IDE 
+.idea/  # JetBrains IDEs
+
+# Docker (optional, if you generate these)
+*.dockerignore

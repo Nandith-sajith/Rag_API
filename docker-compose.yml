@@ -1,0 +1,16 @@
+# RAG_API/docker-compose.yml
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+      - ./assets:/app/assets
+      - ./.env:/app/.env
+    environment:
+      - PYTHONPATH=/app
