@@ -1,4 +1,3 @@
-# src/routes/rag_query.py
 from fastapi import APIRouter, status, Depends
 from src.core.models import PromptRequest, PromptResponse  # Import from models.py
 from src.vector_db.vector_store import VectorStore

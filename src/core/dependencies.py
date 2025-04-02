@@ -1,8 +1,7 @@
-# src/core/dependencies.py
 from concurrent.futures import ThreadPoolExecutor
 from src.vector_db.vector_store import VectorStore
 from cachetools import LRUCache
-from src.core.models import PromptResponse  # Import from models.py
+from src.core.models import PromptResponse  
 
 # Singleton executor instance
 executor = ThreadPoolExecutor(max_workers=4)
