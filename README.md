@@ -33,7 +33,7 @@ GROQ_API_KEY=<your-groq-api-token>
 Run the following command to start the application using Docker Compose:
 
 ```bash
-docker-compose up -d
+docker-compose up --build -d
 ```
 
 ### 4. Test the API
