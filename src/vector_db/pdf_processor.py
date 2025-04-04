@@ -22,7 +22,7 @@ class PDFProcessor:
 
     def chunk_text(self, text: str, max_chunk_size: int = 500) -> List[str]:
         """Chunk text into smaller pieces."""
-        sentences = sent_tokenize(text)
+        sentences = sent_tokenize(text) #nltk
         chunks = []
         current_chunk = ""
         
